@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookCity.Entity", "BookCity
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookCity.Common", "BookCity.Common", "{B6FE2033-2489-4D44-AD42-348297E42F84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "BookCity.Entity\DbContext\EntityFramework.csproj", "{6B4D30F2-06FD-41AE-81D2-C1F663599B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "BookCity.Entity\DbContext\EntityFramework.csproj", "{6B4D30F2-06FD-41AE-81D2-C1F663599B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{EC516786-D312-4417-8B6C-0082C888AB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "BookCity.Entity\Model\Model.csproj", "{22B351FE-EAEA-402A-A30A-88B5C98549D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,17 +29,17 @@ Global
 		{6B4D30F2-06FD-41AE-81D2-C1F663599B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4D30F2-06FD-41AE-81D2-C1F663599B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B4D30F2-06FD-41AE-81D2-C1F663599B62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC516786-D312-4417-8B6C-0082C888AB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC516786-D312-4417-8B6C-0082C888AB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC516786-D312-4417-8B6C-0082C888AB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC516786-D312-4417-8B6C-0082C888AB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B351FE-EAEA-402A-A30A-88B5C98549D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B351FE-EAEA-402A-A30A-88B5C98549D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B351FE-EAEA-402A-A30A-88B5C98549D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B351FE-EAEA-402A-A30A-88B5C98549D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6B4D30F2-06FD-41AE-81D2-C1F663599B62} = {A24D741E-FF57-45D3-A735-B51958FEBC70}
-		{EC516786-D312-4417-8B6C-0082C888AB61} = {A24D741E-FF57-45D3-A735-B51958FEBC70}
+		{22B351FE-EAEA-402A-A30A-88B5C98549D5} = {A24D741E-FF57-45D3-A735-B51958FEBC70}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AED922A8-BB0A-4277-B905-56701FFAF9A7}
