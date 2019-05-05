@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace BookCityAfter
 {
@@ -33,8 +34,15 @@ namespace BookCityAfter
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddEntityFrameworkSqlServer().AddDbContext<EFDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("SqlServer"), 
-                b => b.MigrationsAssembly("BookCityAfter")));//目标项目“BookCityAfter”与迁移程序集“EntityFramework”不匹配，更改目标项目或更改迁移程序集。
+                options.UseSqlServer(Configuration.GetConnectionString("SqlServer"), //目标项目“BookCityAfter”与迁移程序集“EntityFramework”不匹配，更改目标项目或更改迁移程序集。
+                b => b.MigrationsAssembly("BookCityAfter")));
+
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1",new Info{ Title="后台API",Version ="V1"});
+            });
+
+
             services.AddMvc();
 
         }
@@ -46,7 +54,12 @@ namespace BookCityAfter
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseSwagger();
+            app.UseSwaggerUI(c=>
+            {
+                c.SwaggerEndpoint("swagger/v1/swagger.json","My API V1");
+                c.RoutePrefix = string.Empty;
+            });
             app.UseMvc();
         }
     }

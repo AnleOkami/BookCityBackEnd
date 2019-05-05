@@ -48,6 +48,7 @@ namespace Model
         /// <summary>
         /// 手机号码
         /// </summary>
+        [Column(TypeName = "varchar(11)")]
         public string Mobile { get; set; }
         /// <summary>
         /// 邮箱
@@ -71,6 +72,6 @@ namespace Model
         /// 是否启用
         /// </summary>
         [DefaultValue(true)]
-        public bool Enable { get; set; }
+        public bool isEnable { get; set; }
     }
 }
