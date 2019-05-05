@@ -11,6 +11,6 @@ namespace EntityFramework
         {
             builder.Entity<Personnels>().HasKey(b => b.Id).HasName("PrimaryKey_Id");
         }
-        public DbSet<Personnels> CF_Personnel { get; set; }
+        public DbSet<Personnels> Sys_Personnel { get; set; }
     }
 }
